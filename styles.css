@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--white: hsla(0, 0%, 100%, 0.75);
+--btn-white: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color:var(--btn-white);
+  position: relative;
+}
+
+section {
+  max-width: 60%;
+  height: 360px;
+    margin: 10rem auto;
+    display: flex;
+}
+
+section .first-div {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 0.6rem;
+  padding: 3.5rem 34px 0 35px;
+  background-color: var(--orange);
+}
+
+section .second-div {
+  padding: 3.5rem 3rem 0 3.4rem;
+  background-color: var(--dark-cyan);
+}
+
+section .third-div {
+  padding: 3.5rem 3rem 0 3.2rem;
+  background-color: var(--very-dark-cyan);
+    border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+section .first-div, section .second-div,
+section .third-div {
+  max-width: 31%;
+    position: relative;
+}
+
+section .first-div a {
+  color: var(--orange);
+}
+
+section .second-div a {
+  color: var(--dark-cyan);
+}
+
+section .third-div a {
+  color: var(--very-dark-cyan);
+}
+
+section .first-div a:hover {
+  background-color: var(--orange);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+section .second-div a:hover {
+    color: var(--white);
+      border: 1px solid var(--white);
+       background-color: var(--dark-cyan);
+}
+
+section .third-div a:hover {
+    color: var(--btn-white);
+      border: 1px solid var(--white);
+       background-color: var(--very-dark-cyan);
+}
+
+
+section div a {
+  text-decoration: none;
+  color: var(--btn-white);
+  font-size: 12px;
+  border-radius: 2rem;
+  padding: 10px 35px;
+  cursor: pointer;
+  background-color: var(--white);
+ position: relative;
+ left: 8%;
+ top: 1.5rem;
+ transition: all 3ms;
+}
+
+.first-div img,
+ .second-div img, 
+ .third-div img {
+   width: 45px;
+  padding-bottom: 24px;
+}
+
+.first-div .p-1,
+ .second-div .p-1, 
+ .third-div .p-1 {
+  padding-bottom: 15px;
+ }
+
+
+.p-1 {
+font-size: 21px;
+color: var(--btn-white);
+font-weight: 700;
+text-transform: uppercase;
+}
+
+.p-2 {
+color: var(--btn-white);
+font-size: 14.6px;
+line-height: 1.4;
+letter-spacing: 0.3px;
+padding-bottom: 35px;
+}
+
+.attribution {
+  bottom: 2rem;
+}
+
+
+@media screen and (max-width: 968px) {
+  section {
+  max-width: 90%;
+    margin: 2rem auto;
+      height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section .first-div, section .second-div,
+section .third-div {
+  max-width: 90%;
+   height: 340px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 968px) {
+
+section {
+  max-width: 70%;
+    margin: 2rem auto;
+      height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section .first-div, section .second-div,
+section .third-div {
+  max-width: 80%;
+   height: 340px;
+}
+
+section .first-div {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+section .second-div {
+  background-color: var(--dark-cyan);
+}
+
+section .third-div {
+    border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.p-2 {
+font-size: 14px;
+}
+
+}
+
+}
