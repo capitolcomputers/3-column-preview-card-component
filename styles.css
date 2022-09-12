@@ -148,8 +148,14 @@ section .third-div {
 
 @media screen and (min-width: 300px) and (max-width: 968px) {
 
+  main {
+    padding-left: 5.5rem;
+    /* margin: auto; */
+  }
+
+
 section {
-  max-width: 70%;
+  max-width: 100%;
     margin: 2rem auto;
       height: 100%;
     display: flex;
