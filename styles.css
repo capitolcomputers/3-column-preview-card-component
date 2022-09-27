@@ -83,7 +83,6 @@ section .third-div a:hover {
        background-color: var(--very-dark-cyan);
 }
 
-
 section div a {
   text-decoration: none;
   color: var(--btn-white);
@@ -111,7 +110,6 @@ section div a {
   padding-bottom: 15px;
  }
 
-
 .p-1 {
 font-size: 21px;
 color: var(--btn-white);
@@ -131,13 +129,11 @@ padding-bottom: 35px;
   bottom: 2rem;
 }
 
-
 @media screen and (max-width: 968px) {
     main {
     padding-left: 5rem;
     /* margin: auto; */
   }
-
 
 section {
   max-width: 100%;
@@ -158,7 +154,6 @@ section .third-div {
 
   main {
     padding-left: 5rem;
-    /* margin: auto; */
   }
 
 
@@ -192,7 +187,4 @@ section .third-div {
 .p-2 {
 font-size: 14px;
 }
-
-}
-
 }
